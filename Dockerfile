@@ -9,6 +9,7 @@ RUN npm install
 # Step 5: Copy the entire project into the container
 COPY qdp-web/ ./
 # Step 6: Expose the port that the Vite dev server will run on
-EXPOSE 5173
+EXPOSE 8080
 # Step 7: Start the Vite development server ..
-CMD ["npm", "run", "dev"]
+CMD ["serve", "-s", "dist", "-l", "8080"]
+# CMD ["npm", "run", "dev"]

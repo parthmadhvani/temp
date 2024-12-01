@@ -24,6 +24,7 @@ steps:
       - '--region'
       - 'us-central1'
       - '--allow-unauthenticated'
+      - '--port=8080'
 
   # Step 4: Grant public access to the Cloud Run service
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
