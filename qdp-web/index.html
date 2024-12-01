@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QDP Web App</title>
+  </head>
+  <body>
+    <div id="root" style="width: 100%;"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script> 
+    <df-messenger
+      intent="WELCOME"
+      chat-title="QDP-GP5"
+      agent-id="c0b35dff-1cfc-4004-b9c3-61bc5c55b833"
+      language-code="en"
+    ></df-messenger>
+  </body>
+</html>
+
