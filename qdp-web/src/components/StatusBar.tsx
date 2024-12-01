@@ -9,10 +9,10 @@ type StatusBarOption = {
 }
 
 type StatusBarProps = {
-  options: StatusBarOption[]
-  onOptionClick: (id: string) => void
-  onLogout: () => void
-  email: string;
+  options?: StatusBarOption[]
+  onOptionClick?: (id: string) => void
+  onLogout?: () => void
+  email?: string;
 }
 
 export default function StatusBar({

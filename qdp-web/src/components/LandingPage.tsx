@@ -234,7 +234,7 @@ const LandingPage: React.FC = () => {
         )}
 
         {showSecurityQuestion && <SecurityQuestionAuth email={email} onNext={() => setShowMathSkills(true)} />}
-        {showOtpEntry && <OtpEntry email={email} onSubmit={() => setShowOtpEntry(false)} />}
+        {showOtpEntry && <OtpEntry Email={email} onSubmit={() => setShowOtpEntry(false)} />}
         {showMathSkills && <MathSkillsAuth email={email} onSubmit={() => navigate('/file-upload', { state: { email: email, userType: responseUserType } })} />}
       </Box>
     </div>
