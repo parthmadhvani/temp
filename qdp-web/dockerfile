@@ -15,7 +15,7 @@ COPY qdp-web/ ./
 
 ENV PORT=5173
 
-# Step 6: Expose the port that the Vite dev server will run on
+# Step 6: Expose the port that the Vite dev server will run onf
 EXPOSE 5173
 
 # Step 7: Start the Vite development server ..
